@@ -18,7 +18,7 @@ try {
   const completion = await client.chat.completions.create({
     model: "gpt-4o",
     max_tokens: 300,
-    message: [
+    messages: [
       { role: "system", content: "Ти настроен на радостний разговор" },
       {
         role: "user",
